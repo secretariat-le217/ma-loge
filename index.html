@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ma Loge</title>
+<meta name="description" content="La plateforme de notre Loge : tenues, « Qui vient ? », travaux et convocations. Connexion par un code reçu par courriel.">
+<meta name="robots" content="noindex, nofollow">
+<!-- L'aperçu des messageries (WhatsApp, Signal, iMessage…) -->
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:site_name" content="Ma Loge">
+<meta property="og:title" content="Ma Loge">
+<meta property="og:description" content="La plateforme de notre Loge : tenues, « Qui vient ? », travaux et convocations.">
+<meta property="og:url" content="https://secretariat-le217.github.io/ma-loge/">
+<meta property="og:image" content="https://secretariat-le217.github.io/ma-loge/apercu.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Ma Loge — Tenues, Qui vient ?, Travaux">
+<meta name="twitter:card" content="summary_large_image">
+<noscript><meta http-equiv="refresh" content="0; url=https://script.google.com/macros/s/AKfycbz6SKC0BTCb5pZr6a0439b2yaOUD5ZuGRRHFN78zzFeJctvieLSxGJ2RGhji8vNKypjCQ/exec"></noscript>
+<script>
+  // La page relais : elle ne contient AUCUNE donnée, seulement l'adresse de la plateforme.
+  // Seul le paramètre du lien de groupe de « Qui vient ? » est transmis (?q=tenue-AAAA-MM-JJ) ;
+  // tout autre paramètre (jeton de session, lien personnel) est volontairement abandonné.
+  (function () {
+    var cible = 'https://script.google.com/macros/s/AKfycbz6SKC0BTCb5pZr6a0439b2yaOUD5ZuGRRHFN78zzFeJctvieLSxGJ2RGhji8vNKypjCQ/exec';
+    var q = null;
+    try { q = new URLSearchParams(window.location.search).get('q'); } catch (e) {}
+    if (q && /^(tenue-)?\d{4}-\d{2}-\d{2}$/.test(q)) cible += '?q=' + encodeURIComponent(q);
+    window.location.replace(cible);
+  })();
+</script>
+<style>
+  :root { --bleu: #1F3A68; --fond: #F4F5F7; --texte: #1B2433; --or: #C9A961; }
+  @media (prefers-color-scheme: dark) { :root { --fond: #121826; --texte: #E6EAF2; --bleu: #8FB0E8; } }
+  html, body { margin: 0; background: var(--fond); color: var(--texte); }
+  body { font-family: Georgia, 'Times New Roman', serif; min-height: 100vh; display: flex; align-items: center; justify-content: center; padding: 16px; box-sizing: border-box; text-align: center; }
+  h1 { font-weight: normal; font-size: 40px; margin: 0 0 12px; color: var(--bleu); }
+  hr { width: 80px; border: 0; border-top: 3px solid var(--or); margin: 0 auto 20px; }
+  p { font-family: system-ui, sans-serif; font-size: 16px; line-height: 1.5; margin: 0 0 16px; }
+  a { color: var(--bleu); font-weight: 600; }
+</style>
+</head>
+<body>
+  <main>
+    <h1>Ma Loge</h1>
+    <hr>
+    <p>Ouverture de la plateforme…</p>
+    <p><a href="https://script.google.com/macros/s/AKfycbz6SKC0BTCb5pZr6a0439b2yaOUD5ZuGRRHFN78zzFeJctvieLSxGJ2RGhji8vNKypjCQ/exec">Si rien ne se passe, touche ici.</a></p>
+  </main>
+</body>
+</html>
